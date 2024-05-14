@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation("org.testng:testng:6.9.6")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,6 +73,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    testImplementation ("io.mockk:mockk:1.13.10")
+    testImplementation(libs.mockk)
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
 }
